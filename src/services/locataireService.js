@@ -16,7 +16,14 @@ export const addLocataire = (locataire) => {
         body: JSON.stringify(locataire)
     })      
     .then(res => res.json())
-    .then(err => console.log(error))
-    
+    .then(err => console.log(err))
+}
+
+export const supprimerLocataire = (id) => {
+    return fetch(`${URI}/locataire/${id}`,{
+        method:"DELETE"
+    })
+    .then((res)=>res.json())
+    .then((err)=>console.log(err))
 }
 

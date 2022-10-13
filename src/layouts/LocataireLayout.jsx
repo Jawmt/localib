@@ -5,7 +5,7 @@ import LocataireListe from '../components/LocataireListe';
 const LocataireLayout = ({locataires}) => {
   return (
     
-    <Container>
+
         <Table striped bordered hover>
             <thead>
                 <tr>
@@ -19,11 +19,11 @@ const LocataireLayout = ({locataires}) => {
             </thead>
             <tbody>
                 {locataires && locataires.map((locataire)=>
-                    <LocataireListe locataire={locataire}/>
+                    <LocataireListe key={locataire.id} locataire={locataire}/>
                 )}
       </tbody>
     </Table>
-    </Container>
+ 
     
   )
 }

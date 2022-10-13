@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import LocataireListe from '../components/LocataireListe';
+import AddLocataireForm from '../components/AddLocataireForm';
 import LocataireLayout from '../layouts/LocataireLayout';
 import { getAllLocataire } from '../services/locataireService';
+import Container from 'react-bootstrap/Container';
+
 
 const Locataire = () => {
     
@@ -10,11 +12,15 @@ const Locataire = () => {
     useEffect(() => {
         getAllLocataire()
             .then((res)=>setLocataires(res));
-      });
-  
+    },[]);
     return (
-        <LocataireLayout locataires={locataires}/>
-        
+        <>
+            <Container>
+                <LocataireLayout locataires={locataires}/>
+                <AddLocataireForm />
+            </Container>
+            
+        </>
     )
 }
 

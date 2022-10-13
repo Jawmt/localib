@@ -25,3 +25,4 @@ export const supprimerVehicule = (id) => {
     .then((res)=>res.json())
     .catch((err)=>console.log(err))
 }
+

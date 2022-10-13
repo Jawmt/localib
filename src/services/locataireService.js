@@ -27,3 +27,15 @@ export const supprimerLocataire = (id) => {
     .catch((err)=>console.log(err))
 }
 
+export const modifierLocataire = (id, locataire) => {
+    return fetch(`${URI}/locataire/${id}`,{
+        method:"PATCH",
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(locataire)
+    })      
+    .then(res => res.json())
+    .catch(err => console.log(err))
+}
+

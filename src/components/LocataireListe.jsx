@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { supprimerLocataire } from '../services/locataireService';
 import { useNavigate } from "react-router-dom";
+import ModifierLocataireModal from './ModifierLocataireModal';
 
 
 const LocataireListe = ({locataire,recupLocataire}) => {
@@ -19,7 +20,9 @@ const LocataireListe = ({locataire,recupLocataire}) => {
           <td>{locataire.dateDeNaissance}</td>
           <td>{locataire.email}</td>
           <td>{locataire.tel}</td>
+          <td><ModifierLocataireModal recupLocataire={recupLocataire} locataireAModifier={locataire}/></td>
           <td><Button variant="danger" onClick={handleDelete}>Supprimer</Button></td>
+
     </tr>
   )
 }

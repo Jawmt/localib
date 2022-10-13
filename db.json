@@ -34,6 +34,15 @@
       "prixLocJour": 50.9,
       "disponibilite": true,
       "type": "monospace"
+    },
+    {
+      "marque": "citroen",
+      "modele": "",
+      "etat": "",
+      "prixLocJour": "",
+      "disponibilite": "",
+      "type": "",
+      "id": 2
     }
   ]
 }

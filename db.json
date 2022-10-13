@@ -1,0 +1,34 @@
+{
+  "locataire": [
+    {
+      "id": 1,
+      "nom": "nomTest",
+      "prenom": "prenomTest",
+      "dateDeNaissance": "2020-09-17",
+      "email": "email@test.fr",
+      "tel": "0102030405"
+    },
+    {
+      "id": 2,
+      "nom": "nomTest",
+      "prenom": "prenomTest",
+      "dateDeNaissance": "2020-09-17",
+      "email": "email@test.fr",
+      "tel": "0102030405"
+    },
+    {
+      "nom": "nomTest",
+      "prenom": "prenomTest",
+      "dateDeNaissance": "2020-09-17",
+      "email": "email@test.fr",
+      "tel": "0102030405",
+      "id": 3
+    }
+  ],
+  "vehicule": [
+    {
+      "id": 1,
+      "marque": "citroen"
+    }
+  ]
+}

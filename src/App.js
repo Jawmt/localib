@@ -9,8 +9,9 @@ import Vehicule from './pages/Vehicule';
 function App() {
   return ( 
     <>
-      <Header/>
+      
       <BrowserRouter>
+        <Header/>
         <Routes>
           <Route path="/locataire" element={<Locataire/>} />
           <Route path="/vehicule" element={<Vehicule/>} />

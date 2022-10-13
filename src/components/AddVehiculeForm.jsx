@@ -42,6 +42,7 @@ const AddVehiculeForm = ({recupererVehicules,handleClose}) => {
                 onChange={handleChange} 
                 placeholder="Entrer le nom du modèle" />
             <Form.Select value={vehicule.etat} name="etat" onChange={handleChange} >
+                <option value="" selected disabled>Etat du vehicule</option>
                 <option value="propre">Propre</option>
                 <option value="sale">Sale</option>
             </Form.Select>
@@ -52,10 +53,12 @@ const AddVehiculeForm = ({recupererVehicules,handleClose}) => {
                 onChange={handleChange} 
                 placeholder="Entrer le prix de location" />
             <Form.Select value={vehicule.disponibilite} name="disponibilite" onChange={handleChange} >
-                <option value="false">Non disponible</option>
-                <option value="true">Disponible</option>
+                <option value="" selected disabled>Disponibilité</option>
+                <option value="Non disponible">Non disponible</option>
+                <option value="Disponible">Disponible</option>
             </Form.Select>
             <Form.Select value={vehicule.type} name="type" onChange={handleChange} >
+                <option value="" selected disabled>Type de véhicule</option>
                 <option value="citadine">Citadine</option>
                 <option value="monospace">Monospace</option>
             </Form.Select>

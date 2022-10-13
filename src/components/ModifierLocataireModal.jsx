@@ -13,8 +13,8 @@ const ModifierLocataireModal = (props) => {
   
   return (
     <>
-        <Button variant="success" onClick={handleShow}>
-            Modifier
+        <Button variant="dark" onClick={handleShow}>
+            Modifier locataire
         </Button>
 
       <Modal show={show} onHide={handleClose}>

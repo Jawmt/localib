@@ -15,14 +15,6 @@
       "type": "monospace"
     },
     {
-      "nom": "cxw",
-      "prenom": "",
-      "dateDeNaissance": "",
-      "email": "",
-      "tel": "",
-      "id": 5
-    },
-    {
       "nom": "dsqdsq",
       "prenom": "dsq",
       "dateDeNaissance": "2022-10-05",
@@ -33,13 +25,22 @@
   ],
   "vehicule": [
     {
-      "id": 1,
-      "marque": "citroen",
+      "marque": "Opel ",
+      "modele": "meriva",
+      "etat": "propre",
+      "prixLocJour": "1200",
+      "disponibilite": "Disponible",
+      "type": "citadine",
+      "id": 1
+    },
+    {
+      "marque": "Citroen ",
       "modele": "xsara",
       "etat": "propre",
-      "prixLocJour": 50.9,
-      "disponibilite": true,
-      "type": "monospace"
+      "prixLocJour": "200",
+      "disponibilite": "Non disponible",
+      "type": "monospace",
+      "id": 2
     }
   ]
 }

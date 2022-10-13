@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { supprimerVehicule } from '../services/vehiculeService';
+import ModifierVehiculeModal from './ModifierVehiculeModal';
 
 
 const VehiculeListe = ({vehicule,recupererVehicules}) => {
@@ -19,6 +20,7 @@ const VehiculeListe = ({vehicule,recupererVehicules}) => {
           <td>{vehicule.prixLocJour}</td>
           <td>{vehicule.disponibilite}</td>
           <td>{vehicule.type}</td>
+          <td><ModifierVehiculeModal vehiculeAModifier={vehicule} recupererVehicules={recupererVehicules}/></td>
           <td><Button variant="danger" onClick={handleDelete}>Supprimer</Button></td>
     </tr>
   )

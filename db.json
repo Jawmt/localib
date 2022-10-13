@@ -6,7 +6,13 @@
       "prenom": "2155",
       "dateDeNaissance": "2020-09-17",
       "email": "email@test",
-      "tel": "0102030405"
+      "tel": "0102030405",
+      "marque": "citroen",
+      "modele": "xsaraa",
+      "etat": "propre",
+      "prixLocJour": 50.9,
+      "disponibilite": true,
+      "type": "monospace"
     },
     {
       "nom": "cxw",

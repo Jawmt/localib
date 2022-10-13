@@ -26,3 +26,14 @@ export const supprimerVehicule = (id) => {
     .catch((err)=>console.log(err))
 }
 
+export const modifierVehicule = (id, vehicule) => {
+    return fetch(`${URI}/vehicule/${id}`,{
+        method:"PATCH",
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(vehicule)
+    })      
+    .then(res => res.json())
+    .catch(err => console.log(err))
+}

@@ -9,50 +9,31 @@
       "tel": "0102030405"
     },
     {
-      "id": 2,
-      "nom": "nomTest",
-      "prenom": "prenomTest",
-      "dateDeNaissance": "2020-09-17",
-      "email": "email@test.fr",
-      "tel": "0102030405"
-    },
-    {
-      "nom": "nomTest",
-      "prenom": "prenomTest",
-      "dateDeNaissance": "2020-09-17",
-      "email": "email@test.fr",
-      "tel": "0102030405",
-      "id": 3
-    },
-    {
-      "nom": "Nombv",
+      "nom": "",
       "prenom": "",
       "dateDeNaissance": "",
-      "email": "",
+      "email": "rez",
       "tel": "",
       "id": 4
     },
     {
-      "nom": "gfd",
-      "prenom": "gfd",
-      "dateDeNaissance": "2022-10-01",
-      "email": "az@gmail.com",
-      "tel": "012006",
-      "id": 5
-    },
-    {
-      "nom": "",
+      "nom": "cxw",
       "prenom": "",
       "dateDeNaissance": "",
       "email": "",
       "tel": "",
-      "id": 6
+      "id": 5
     }
   ],
   "vehicule": [
     {
       "id": 1,
-      "marque": "citroen"
+      "marque": "citroen",
+      "modele": "xsara",
+      "etat": "propre",
+      "prixLocJour": 50.9,
+      "disponibilite": true,
+      "type": "monospace"
     }
   ]
 }

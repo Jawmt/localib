@@ -2,7 +2,7 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 import LocataireListe from '../components/LocataireListe';
 
-const LocataireLayout = ({locataires}) => {
+const LocataireLayout = ({locataires,recupererLocataire}) => {
   return (
     
 
@@ -15,11 +15,12 @@ const LocataireLayout = ({locataires}) => {
                 <th>DateDeNaissance</th>
                 <th>Email</th>
                 <th>NumeroTel</th>
+                <th>Supprimer</th>
                 </tr>
             </thead>
             <tbody>
                 {locataires && locataires.map((locataire)=>
-                    <LocataireListe key={locataire.id} locataire={locataire}/>
+                    <LocataireListe key={locataire.id} locataire={locataire} recupLocataire={recupererLocataire}/>
                 )}
       </tbody>
     </Table>

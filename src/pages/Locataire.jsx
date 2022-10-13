@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import AddLocataireForm from '../components/AddLocataireForm';
 import LocataireLayout from '../layouts/LocataireLayout';
 import { getAllLocataire } from '../services/locataireService';
 import Container from 'react-bootstrap/Container';
+import AddLocataireModal from '../components/AddLocataireModal';
 
 
 const Locataire = () => {
@@ -10,14 +10,19 @@ const Locataire = () => {
     const [locataires, setLocataires] = useState([]);
 
     useEffect(() => {
-        getAllLocataire()
-            .then((res)=>setLocataires(res));
+        recupererLocataire()
     },[]);
+
+    const recupererLocataire = () => {
+        getAllLocataire()
+            .then((res)=> setLocataires(res))
+    }
+
     return (
         <>
             <Container>
-                <LocataireLayout locataires={locataires}/>
-                <AddLocataireForm />
+                <AddLocataireModal recupererLocataire={recupererLocataire}  />
+                <LocataireLayout locataires={locataires} recupererLocataire={recupererLocataire} />
             </Container>
             
         </>

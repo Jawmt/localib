@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import AddLocataireForm from './AddLocataireForm';
 
-const AddLocataireModal = () => {
+const AddLocataireModal = (props) => {
   
   const [show, setShow] = useState(false);
 
@@ -11,17 +12,17 @@ const AddLocataireModal = () => {
   
   return (
     <>
-        <Button variant="dark" onClick={handleShow}>
+        <Button className='mt-4 mb-4'  variant="dark" onClick={handleShow}>
             Ajouter locataire
         </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Ajouter un nouveau client</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body><AddLocataireForm recupererLocataire={props.recupererLocataire} handleClose={handleClose}/></Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose} >
             Close
           </Button>
         </Modal.Footer>

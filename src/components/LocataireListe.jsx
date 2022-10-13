@@ -1,8 +1,16 @@
 import React from 'react'
-import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
+import { supprimerLocataire } from '../services/locataireService';
+import { useNavigate } from "react-router-dom";
 
 
-const LocataireListe = ({locataire}) => {
+const LocataireListe = ({locataire,recupLocataire}) => {
+  
+
+  const handleDelete= () => {
+    supprimerLocataire(locataire.id).then(()=> recupLocataire());
+  }
+  
   return (
     <tr>
           <td>{locataire.id}</td>
@@ -11,6 +19,7 @@ const LocataireListe = ({locataire}) => {
           <td>{locataire.dateDeNaissance}</td>
           <td>{locataire.email}</td>
           <td>{locataire.tel}</td>
+          <td><Button variant="danger" onClick={handleDelete}>Supprimer</Button></td>
     </tr>
   )
 }

@@ -21,6 +21,9 @@ const Header = () => {
             <LinkContainer to="/LocationVehicules">
                <Nav.Link >Locations des véhicules</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/gestionDesLocations">
+               <Nav.Link >Gestion des locations</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Container>
       </Navbar>

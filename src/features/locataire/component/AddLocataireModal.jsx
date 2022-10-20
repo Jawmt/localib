@@ -18,7 +18,7 @@ const AddLocataireModal = (props) => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Ajouter un nouveau client</Modal.Title>
+          <Modal.Title>Ajouter un locataire</Modal.Title>
         </Modal.Header>
         <Modal.Body><AddLocataireForm recupererLocataire={props.recupererLocataire} handleClose={handleClose}/></Modal.Body>
         <Modal.Footer>

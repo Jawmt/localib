@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap';
-import AddLocationVehiculeForm from './AddLocationVehiculeForm';
+import AddLocationForm from './AddLocationForm';
 
-const LocationVehiculeModal = (props) => {
+
+const AddLocationModal = (props) => {
     
     const [show, setShow] = useState(false);
 
@@ -11,15 +12,15 @@ const LocationVehiculeModal = (props) => {
     
     return (
       <>
-          <Button className='mt-4 mb-4'  variant="dark" onClick={handleShow}>
-              Louer le véhicule
-          </Button>
+        <Button className='mt-4 mb-4'  variant="dark" onClick={handleShow}>
+            Ajouter une location
+        </Button>
   
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Louer le vehicule</Modal.Title>
+            <Modal.Title>Ajouter une location</Modal.Title>
           </Modal.Header>
-          <Modal.Body><AddLocationVehiculeForm locataires={props.locataires} vehicule={props.vehicule} handleClose={handleClose}/></Modal.Body>
+          <Modal.Body><AddLocationForm locataires={props.locataires} vehicules={props.vehicules} handleClose={handleClose} recupererLocation={props.recupererLocation}/></Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose} >
               Close
@@ -30,4 +31,4 @@ const LocationVehiculeModal = (props) => {
     )
 }
 
-export default LocationVehiculeModal
+export default AddLocationModal

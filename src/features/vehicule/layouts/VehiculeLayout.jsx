@@ -16,6 +16,7 @@ const VehiculeLayout = ({vehicules,recupererVehicules}) => {
                 <th>Prix Location Jour</th>
                 <th>Diponibilité</th>
                 <th>Type</th>
+                <th>Modifier</th>
                 <th>Supprimer</th>
                 </tr>
             </thead>

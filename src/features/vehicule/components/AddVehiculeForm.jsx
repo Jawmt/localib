@@ -41,7 +41,7 @@ const AddVehiculeForm = ({recupererVehicules,handleClose}) => {
                 onChange={handleChange} 
                 placeholder="Entrer le nom du modèle" />
             <Form.Select value={vehicule.etat} name="etat" onChange={handleChange} >
-                <option value="" selected disabled>Etat du vehicule</option>
+                <option value="" defaultValue disabled>Etat du vehicule</option>
                 <option value="propre">Propre</option>
                 <option value="sale">Sale</option>
             </Form.Select>

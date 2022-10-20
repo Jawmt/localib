@@ -15,6 +15,7 @@ const LocataireLayout = ({locataires,recupererLocataire}) => {
                 <th>DateDeNaissance</th>
                 <th>Email</th>
                 <th>NumeroTel</th>
+                <th>Modifier</th>
                 <th>Supprimer</th>
                 </tr>
             </thead>

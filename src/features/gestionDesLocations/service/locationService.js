@@ -1,7 +1,7 @@
 const URI= "http://localhost:3004"; 
 
 export const getAllLocation = () => {
-    return fetch(`${URI}/locatation`)
+    return fetch(`${URI}/location`)
                 .then((result)=> result.json())
                 .catch((err)=>console.log(err))
 }

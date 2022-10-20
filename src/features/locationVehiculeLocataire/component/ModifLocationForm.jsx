@@ -64,7 +64,7 @@ const ModificationLocationForm = ({vehicules, locataires,handleClose,recupererLo
                 onChange={handleChange}  />
            
             <Button variant="dark" type="submit" onClick={handleSubmit}>
-                Ajouter une location
+                Modifier une location
             </Button>
         </Stack>
 

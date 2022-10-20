@@ -60,29 +60,8 @@
       "id": 1
     },
     {
-      "id_vehicule": 2,
-      "id_locataire": "6",
-      "dateDeDebut": "2022-09-27",
-      "dateDeFin": "2022-10-11",
-      "id": 2
-    },
-    {
       "id_vehicule": 1,
-      "id_locataire": "1",
-      "dateDeDebut": "2022-10-12",
-      "dateDeFin": "2022-10-01",
-      "id": 3
-    },
-    {
-      "id_vehicule": 1,
-      "id_locataire": "1",
-      "dateDeDebut": "2022-10-24",
-      "dateDeFin": "2022-10-06",
-      "id": 4
-    },
-    {
-      "id_vehicule": 1,
-      "id_locataire": "6",
+      "id_locataire": 1,
       "dateDeDebut": "2022-10-12",
       "dateDeFin": "2022-10-04",
       "id": 5

@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import LocataireListe from '../components/LocataireListe';
+import LocataireListe from '../component/LocataireListe';
 
 const LocataireLayout = ({locataires,recupererLocataire}) => {
   return (

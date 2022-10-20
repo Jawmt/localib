@@ -2,7 +2,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React, { useState } from 'react';
 import Stack from 'react-bootstrap/Stack';
-import { addLocataire } from '../services/locataireService';
 import { addVehicule } from '../services/vehiculeService';
 
 

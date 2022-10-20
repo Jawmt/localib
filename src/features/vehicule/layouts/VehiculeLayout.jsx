@@ -1,6 +1,5 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import LocataireListe from '../components/LocataireListe';
 import VehiculeListe from '../components/VehiculeListe';
 
 const VehiculeLayout = ({vehicules,recupererVehicules}) => {

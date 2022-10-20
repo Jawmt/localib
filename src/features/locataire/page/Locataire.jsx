@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import LocataireLayout from '../layouts/LocataireLayout';
+
 import { getAllLocataire } from '../services/locataireService';
 import Container from 'react-bootstrap/Container';
-import AddLocataireModal from '../components/AddLocataireModal';
+import AddLocataireModal from '../component/AddLocataireModal';
+import LocataireLayout from '../layout/LocataireLayout';
 
 
 const Locataire = () => {

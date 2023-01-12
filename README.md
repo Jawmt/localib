@@ -1,3 +1,30 @@
+<br />
+<div align="center">
+
+
+<h3 align="center">Application Localib Front END React/Json Server</h3>
+
+  <p align="center">
+    Application permettant la gestion de location de vehicules 
+    <br />
+    <br />
+    <br />
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+
+# Getting Started Docker
+
+
+#### Run de l'application via le fichier docker-compose :
+```
+docker compose up -d
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
